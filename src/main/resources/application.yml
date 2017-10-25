@@ -1,0 +1,20 @@
+
+---
+logging:
+  level:
+    org:
+      springframework:
+        web: INFO
+      hibernate: ERROR
+  file: /data/naruto/log/MyInterview.log
+
+#spring.cloud.config.server.bootstrap:   true
+#spring.cloud.config.server.prefix:  /config
+#spring.cloud.config.server.git.uri: /data/config-repo
+server.context-path:    /${spring.application.name}
+#
+
+spring:
+    application.name:   MyInterview
+server:
+  port: 8080
